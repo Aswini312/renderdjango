@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-y)&hponhibofu5zm_+!vza0!*!2@kuf0si279%suumm61vx8&c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'renderprjct.wsgi.application'
 #}
 
 DATABASES = {
-   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+   'default': dj_database_url.parse("postgresql://demodatabse_user:WLa3yhnxj0uw4qBmSXJ7iRcj12wt7PQG@dpg-crfhn9tds78s73cn6ab0-a.oregon-postgres.render.com/demodatabse")
 }
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
